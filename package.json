@@ -1,0 +1,16 @@
+{
+  "name": "farfetch-app-automated-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "^3.5.5",
+    "webdriverio": "^6.12.1"
+  }
+}
