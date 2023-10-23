@@ -56,14 +56,13 @@ To run the tests on your computer, follow these steps:
  * [Node](https://nodejs.org/en/) 
  * [Git](https://git-scm.com/)
  * [Appium](https://github.com/appium/appium-desktop)
- * [Appium Inspector](https://github.com/appium/appium-inspector)
  * [Android Studio](https://developer.android.com/studio)
  <br/>
 
 
-### Appium Inspector Settings
+### Appium Settings
 
-2. Open Appium inspector and enter the following setting:
+2. Open Appium and enter the following setting:
  - Remote Host : 127.0.0.1
  - Remote Port : 4723
 
@@ -71,49 +70,41 @@ To run the tests on your computer, follow these steps:
 
 <br/>
 
-3. Configure the device (emulator), platform (Android), and application (APK) that will be used to automate testing on a mobile application.
-
-![image](https://i.imgur.com/wP7LgLc.png)
-
-* Open the Edit raw JSON and add the following code (in the location circled in green):
-```
- {
-  "appium:deviceName": "emulator",
-  "platformName": "android",
-  "appium:app": "/Users/T-GAMER/Desktop/arquivo-apk/farfetch.apk"
-}
- ```
-* IMPORTANT: On the "appium:app:" campus, update the file path to point to the directory where your APK file is stored on your local machine.
-<br/>
-
-### APK File
-4. Download the APK file through this [Link](https://www.apkmirror.com/apk/farfetch-uk-limited/farfetch-designer-shopping/farfetch-designer-shopping-5-32-0-release/)
-* For the tests carried out in this repository, version 5.32.0 was used
-<br/>
-
 ### Code Editor
 
 Inside your code editor, open the terminal and run the following commands:
 
-5. Clone this GitHub repository:
+3. Clone this GitHub repository:
 
  ```
  git clone https://github.com/henriquekoaski/Farfecth-Mobile-Automated-Tests.git
  ```
 <br/>
 
-6. Direct to the project directory:
+4. Direct to the project directory:
 
  ```
 cd Farfecth-Mobile-Automated-Tests
  ```
 <br/>
 
-7. Install the dependencies:
+5. Install the dependencies:
 
  ```
 npm install
  ```
+
+### APK File
+
+6. Download the APK file through this [Link](https://www.apkmirror.com/apk/farfetch-uk-limited/farfetch-designer-shopping/farfetch-designer-shopping-5-32-0-release/)
+* For the tests carried out in this repository, version 5.32.0 was used
+<br/>
+
+7. "In the 'codeceptj.conf.js' file, within the 'Appium>app' section, update the file path to specify the directory where your APK file is stored on your local machine."
+
+![image](https://github.com/henriquekoaski/Farfecth-Mobile-Automated-Tests/assets/135274801/a728046c-ada8-49dc-8e9e-353e5f9c3065)
+<br/>
+
 ## Project Structure
 
 The project is organized as follows:
